@@ -14,7 +14,7 @@ TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 			TriggerEvent('pass_or_fail')
   			TriggerClientEvent("pNotify:SetQueueMax", source, "lmao", 1)
   			TriggerClientEvent("pNotify:SendNotification", source, {
-            text = "Probójesz sprzedać narkotyki",
+            text = "You tried selling drugs",
             type = "error",
             queue = "lmao",
             timeout = 2500,
@@ -46,7 +46,7 @@ end)
 		if morf >= 1 and success == true then
 			 	TriggerClientEvent("pNotify:SetQueueMax", source, "lmao", 5)
 				TriggerClientEvent("pNotify:SendNotification", source, {
-					text = "Sprzedałeś paczkę morfiny za $" .. paymentc ,
+					text = "You sold a package of morphine for $" .. paymentc ,
 					type = "success",
 					progressBar = false,
 					queue = "lmao",
@@ -60,7 +60,7 @@ end)
   		elseif weed >= 1 and success == true then
   				TriggerClientEvent("pNotify:SetQueueMax", source, "lmao", 5)
 				TriggerClientEvent("pNotify:SendNotification", source, {
-					text = "Sprzedałeś sreberko z marycha za $" .. paymentw ,
+					text = "You sold a silver from a marycha $" .. paymentw ,
 					type = "success",
 					progressBar = false,
 					queue = "lmao",
@@ -75,7 +75,7 @@ end)
   		  elseif koda >= 1 and success == true then
   				TriggerClientEvent("pNotify:SetQueueMax", source, "lmao", 5)
 				TriggerClientEvent("pNotify:SendNotification", source, {
-					text = "Sprzedałeś paczkę kodeiny za $" .. paymentm ,
+					text = "You sold the codeine package for $" .. paymentm ,
 					type = "success",
 					progressBar = false,
 					queue = "lmao",
@@ -89,7 +89,7 @@ end)
   			elseif amfa >= 1 and success == true then
   				TriggerClientEvent("pNotify:SetQueueMax", source, "lmao", 5)
 				TriggerClientEvent("pNotify:SendNotification", source, {
-					text = "Sprzedałeś paczke amfetaminy za $" .. paymento ,
+					text = "You sold a packet of amphetamines $" .. paymento ,
 					type = "success",
 					progressBar = false,
 					queue = "lmao",
@@ -103,7 +103,7 @@ end)
 			elseif selling == true and success == false and notintrested == true then
 				TriggerClientEvent("pNotify:SetQueueMax", source, "lmao", 5)
 				TriggerClientEvent("pNotify:SendNotification", source, {
-					text = "Nie jestem zainteresowany",
+					text = "Im not intrested",
 					type = "error",
 					progressBar = false,
 					queue = "lmao",
@@ -114,7 +114,7 @@ end)
   			elseif koda < 1 and morf < 1 and weed < 1 and amfa < 1 then
 				TriggerClientEvent("pNotify:SetQueueMax", source, "lmao", 5)
 				TriggerClientEvent("pNotify:SendNotification", source, {
-				text = "Nie masz więcej narkotyków",
+				text = "You do not have any more drugs",
 				type = "error",
 				progressBar = false,
 				queue = "lmao",
@@ -124,7 +124,7 @@ end)
 			elseif copscalled == true and success == false then
   				TriggerClientEvent("pNotify:SetQueueMax", source, "lmao", 5)
 				TriggerClientEvent("pNotify:SendNotification", source, {
-					text = "Dzwonię na policję!",
+					text = "Im calling the police!",
 					type = "error",
 					progressBar = false,
 					queue = "lmao",
@@ -158,7 +158,7 @@ RegisterNetEvent('sell_dis')
 AddEventHandler('sell_dis', function()
 		TriggerClientEvent("pNotify:SetQueueMax", source, "lmao", 5)
 		TriggerClientEvent("pNotify:SendNotification", source, {
-		text = "Odszedłeś za daleko",
+		text = "You have gone too far",
 		type = "error",
 		progressBar = false,
 		queue = "lmao",
